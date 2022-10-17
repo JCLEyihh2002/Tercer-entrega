@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "13edd529-bc63-4f00-8aa3-69e3d18798ae",
+		"name": "Entregable3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20706331"
+	},
+	"item": [
+		{
+			"name": "RestTemplate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/beneficiarios/api/publica",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"api",
+						"publica"
+					],
+					"query": [
+						{
+							"key": "beneficiarios",
+							"value": "Hermano",
+							"disabled": true
+						},
+						{
+							"key": "edad",
+							"value": "24",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertaBeneficiario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"beneficiarios\":\"Hermano\",\r\n    \"edad\":\"24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/beneficiarios/beneficiarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"beneficiarios"
+					],
+					"query": [
+						{
+							"key": "beneficiarios",
+							"value": "Hermano",
+							"disabled": true
+						},
+						{
+							"key": "edad",
+							"value": "24",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtieneBeneficiario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pais\" : \"India\",\r\n    \"poblacion\" : \"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/beneficiarios/obtiene",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"obtiene"
+					],
+					"query": [
+						{
+							"key": "beneficiarios",
+							"value": "Hermano",
+							"disabled": true
+						},
+						{
+							"key": "edad",
+							"value": "24",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificaBeneficiario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"beneficiarios\":\"Hermano\",\r\n    \"edad\":\"24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/beneficiarios/modifica",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"modifica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borraBeneficiario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"beneficiarios\" : \"Hermano\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/beneficiarios/borra",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"borra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtieneHeaders",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/beneficiarios/obtiene",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beneficiarios",
+						"obtiene"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
